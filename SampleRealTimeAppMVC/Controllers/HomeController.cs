@@ -25,9 +25,9 @@ namespace SampleRealTimeAppMVC.Controllers
         public IActionResult AddTestProduct()
         {
             _hub.Clients.All.ReceiveProduct("from controller", $"Added {DateTime.Now:f}", "A", "create");
-            return Content("Added product in backend");
+            return Content("Added product in backend");   
         }
 
-
+          
     }
 }
